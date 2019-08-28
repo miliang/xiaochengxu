@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='title'>
+    <text>支付成功</text>
+  </view>
+
+  <view class="icongroup">
+    <block wx:for="{{iconSize}}">
+      <icon type="success" size="{{item}}"/>
+    </block>
+  </view>
+
+  <view class='Odetail'wx:for='{{Odetail}}'>
+    <text>交易金额:<text class='sign'>￥</text><text class='price'>{{item.price}}</text></text>
+    <text>{{item.fname}}</text>
+    <text class='time'>{{item.time}}</text>
+    <text>{{item.cinema}}</text>
+    <text>{{item.seat}}</text>
+  </view>
+</view>

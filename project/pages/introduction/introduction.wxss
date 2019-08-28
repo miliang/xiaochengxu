@@ -1,0 +1,96 @@
+/* pages/introduction/introduction.wxss */
+.container{
+  background-color: rbga(96 ,96 ,96 ,0.1);
+}
+swiper-item image {
+  width:320px;
+  height:150px;
+  display:inline-block;
+  overflow:hidden;
+}
+.section{
+  border: 1px solid orange;
+  background-color: rgba(96 ,96 ,96 ,0.1);
+}
+.content{
+  height: 1000rpx;
+  /* border: 3px solid sandybrown; */
+}
+.menu_box{
+  /* border: 5px solid springgreen; */
+  display: flex;
+  height: 80rpx;
+  background-color: rgb(244 ,244 ,244);
+}
+.menu1,.menu2{
+    /* flex: 1;   */
+  font-size: 13px;
+  line-height: 80rpx; 
+  margin-left: 30rpx;
+  text-align: center;
+  background-color:  rgb(244 ,244 ,244);
+}
+.borders{
+  width: 30%;
+   border-bottom: 4rpx solid #f00; 
+  color: #f00;
+}
+.tab1,.tab2{
+  height: 300rpx;
+ /* background-color: rgb(244 ,244 ,244); */
+}
+ .tab1{
+  background-color: rgb(244 ,244 ,244); 
+} 
+textarea{
+  width: 95%;
+  margin:auto;
+  height: 120px;
+  padding-top: 30rpx;
+  font-size: 13px;
+  text-indent: 2em;
+  margin-bottom: 10rpx;
+}
+.text{
+  /* border: 2px solid firebrick; */
+}
+.image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 20rpx;
+}
+.text{
+  background: white;
+}
+input{
+  width: 70%;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 12px;
+  margin: 30rpx 0 20rpx 60rpx;
+  padding: 10rpx;
+}
+#textarea{
+  width: 80%;
+  border: 1px solid #ccc;
+  margin-left: 60rpx;
+  height: 100px;
+  padding: 10rpx;
+  background-color: white;
+}
+#text{
+  font-size: 14px;
+}
+button{
+  width: 80%;
+  margin: auto;
+  background-color: rgb(255 ,103 ,103);
+  color: white;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  line-height: 2;
+  border-radius: 3px;
+}
+button text,#sunmit{
+  font-size: 13px;
+}

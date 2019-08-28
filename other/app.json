@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/hotfilm/hotfilm",
+    "pages/cinema/cinema",
+    "pages/personal/personal",
+    "pages/pipefilm/pipefilm",
+    "pages/logs/logs",
+    "pages/filmdetail/filmdetail",
+    "pages/firmorder/firmorder",
+    "pages/seat/seat",
+    "pages/paysuccess/paysuccess"
+  ],
+  "window": {
+    "backgroundTextStyle": "white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "电影票",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#f0f0f0",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#26d62f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/hotfilm/hotfilm",
+        "iconPath": "image/film-normal.png",
+        "selectedIconPath": "image/film.png",
+        "text": "热映"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "iconPath": "image/camera-normal.png",
+        "selectedIconPath": "image/icon-cinema-camera.png",
+        "text": "影院"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "image/user-normal.png",
+        "selectedIconPath": "image/user.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

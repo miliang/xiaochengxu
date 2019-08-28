@@ -1,0 +1,7 @@
+<!--pages/item/item.wxml-->
+<!-- <text>pages/item/item.wxml</text> -->
+<!--在item.wxml中引用item.wxml，就可以了使用item模板  -->
+<import src="demo.wxml"/>
+<template is="item" data="{{text:'forbar'}}"/>
+<!--include可以将目标文件除了<template/> <wxs/>外的整个代码引入，相当于是拷贝到include的位置  -->
+<!-- <view>footer</view> -->

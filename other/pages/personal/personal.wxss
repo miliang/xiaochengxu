@@ -1,0 +1,75 @@
+/* pages/personal/personal.wxss */
+page{
+    background-color: #f0f0f0;  
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #26d62f;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.userinfo-nickname {
+  color: white;
+}
+
+.onhot{
+  border-left:10rpx solid #26d62f;
+  padding-left: 25rpx;
+  color: #828282;
+}
+
+.myorder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #828282;
+}
+/* .myorder>view{
+  padding: 5rpx;
+  border-radius: 100%;
+  border: 1px solid #aaa;
+} */
+
+.myorder image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.onsale,.movied{
+  border: 1px solid #e9e9e9;
+  /* border-bottom: none; */
+  margin-top:50px;
+  padding: 15rpx;
+  padding-top: none;
+  background-color: white;
+}
+
+.onsale-item,.movied-item{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-around;
+  color: #828282;
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 15rpx;
+  margin-top: 15rpx;
+}
+
+.movied-item:last-child,.onsale-item:last-child{
+   border-bottom: none; 
+}
+
+.saletype,.moviedtype{
+  width: 80%;
+  font-size: 28rpx;
+}

@@ -1,0 +1,46 @@
+<!--pages/introduction/introduction.wxml-->
+<view class='container'>
+  <view class='section'>
+    <swiper autoplay='true' indicator-dots='true' indicator-active-color="#ffffff">
+      <block wx:for='{{imgUrls}}'>
+        <swiper-item>
+          <image src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='section'>
+    <view class='content'>
+      <view class='menu_box'>
+        <text class='menu1 {{menuTapCurrent=="0"?"borders":""}}' data-current="0" catchtap='menuTap'>店铺介绍</text>
+        <text class='menu2 {{menuTapCurrent=="1"?"borders":""}}' data-current="1" catchtap='menuTap'>建议留言</text>
+      </view>
+      <view class='tab1' hidden="{{menuTapCurrent!=0}}">
+        <textarea> 
+          妈妈厨房是一家24小时经营以港式粤菜为基础的中西融合菜，特聘香港融合菜大师主理，打造新派主题时尚餐厅。它专业的厨师团队，开发和研究新派融合
+          菜，定期推出特色菜品，聘请专业艺术团队研发造型，让茉莉每一款菜品成为一件艺术品，让客人感受别样的饮食文化。
+        </textarea>
+        <view class='text'>
+          <map id='map' longitude='104.06' latitude='30.67' scale='14' controls='{{controls}}' bindcontroltap='controltap' markers='{{markers}}' bindmarkertap='markertap' polyline='{{polyline}}' bindregionchange='regionchange' show-location style='width:100%;height:180px;'></map> 
+          <image class='image' src='../../image/position.png'></image>
+            <text id='text'>四川省成都市锦江区妈妈厨房</text>
+            <button>
+              <text>联系电话：028-6666667875</text>
+            </button>
+          </view>
+    </view>
+     <view class='tab2' hidden="{{menuTapCurrent!=1}}">
+        <form>
+          <input placeholder='姓名'></input>
+          <input placeholder='电话'></input>
+          <textarea id='textarea' type='textearea' placeholder='建议'></textarea>
+          <button id='submit'>提交</button>
+        </form>
+      </view>
+
+    </view>
+    
+  </view>
+</view>
+
+

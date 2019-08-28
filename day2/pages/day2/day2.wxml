@@ -1,0 +1,14 @@
+<!--pages/day2/day2.wxml-->
+<!-- <text>pages/day2/day2.wxml</text> -->
+<text>{{myname}}</text>
+<button data-name='轻轻地我走了正如我轻轻地来' bindtap='changeName'>点击修改</button>
+
+<view id='outer' bindtap='handleTap1'>
+outer view
+  <view id='middle' catchtap='handleTap2'>
+  middle view
+    <view id='inner' data-name='我是最小的view' bindtap='handleTap3'>
+    inner view
+    </view>
+  </view>
+</view>

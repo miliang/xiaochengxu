@@ -1,0 +1,144 @@
+/* pages/payfor/payfor.wxss */
+/*全局样式*/  
+page {  
+    padding: 20px 0;  
+}  
+ .container{
+  background-color: rgb(244, 244, 244);
+ } 
+ /*内容  */
+ .section{
+   background-color: white;
+   /* border: 1px solid red; */
+ }
+ /*头部  */
+.header{
+  margin:20rpx 0  30rpx 0;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: flex-start;
+}
+/*头部下的图片  */
+.header image{
+    width: 120rpx;
+    height: 120rpx;
+    margin-left: 30rpx;
+}
+/*标题文字和价格  */
+.title{
+  font-size:14px;
+  margin-left: 30rpx; 
+}
+#prices{
+  margin: 55rpx  0 0 -180rpx;
+  color: orangered;
+  font-size: 14px;
+}
+/*主容器*/  
+.stepper {  
+    width: 80px;  
+    height: 26px;  
+    /*给主容器设一个边框*/  
+    border: 1px solid #ccc;  
+    border-radius: 3px;  
+     margin:30rpx 0 0 240rpx;   
+}  
+  
+/*加号和减号*/  
+.stepper text {  
+    width: 19px;  
+    line-height: 26px;  
+    text-align: center;  
+    float: left;  
+}  
+  
+/*数值*/  
+.stepper input {  
+    width: 40px;  
+    height: 26px;  
+    float: left;  
+    margin: 0 auto;  
+    text-align: center;  
+    font-size: 12px;  
+    /*给中间的input设置左右边框即可*/  
+    border-left: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+}  
+  
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}  
+  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  
+/*买家留言  */
+.textarea{
+  height: 100px;
+  padding: 30rpx 0 0rpx 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+textarea{
+  width: 90%;
+  height: 80px;
+  font-size: 14px;
+  padding: 20rpx 0 0 35rpx;
+  margin:auto;
+  background-color: rgb(244, 244, 244);
+}
+/*添加地址  */
+.address{
+  height: 60rpx;
+  font-size: 14px;
+  padding: 15rpx;
+}
+  /* 商品金额与运费*/
+  #price{
+
+    margin-top: 30rpx;
+  }
+  #price,.fy{
+    padding: 15rpx;
+    font-size: 14px;
+    height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .price{
+    color: orangered;
+    font-size: 14px;
+  }
+  .right{
+    margin-left:68%;
+  }
+   .right1{
+    margin-left:78%;
+  }
+   .s1{
+    margin-top: 270rpx;
+    bottom: 0px;
+  } 
+  .count{
+     border: 2px solid saddlebrown; 
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+    text-align: center;
+    justify-content: flex-start;
+     margin-bottom: 0;
+  }
+  .count text{
+    font-size: 14px;
+    padding: 20rpx;
+  }
+  button{
+    font-size: 14px;
+    background: orangered;
+    border-radius: 0;
+    color: white;
+    margin-left:44.7%;
+     height: 40px; 
+  }

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/default/default",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/introduction/introduction",
+    "pages/talkAbout/talkAbout",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/payfor/payfor",
+    "pages/hot/hot"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "#ff3366",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/default/default",
+        "text": "点餐",
+        "iconPath": "image/icon_dinner_gray.png",
+        "selectedIconPath": "image/icon_dinner_orange.png"
+      },
+      {
+        "pagePath": "pages/talkAbout/talkAbout",
+        "text": "客说",
+        "iconPath": "image/icon_talk_gray.png",
+        "selectedIconPath": "image/icon_talk_orange.png"
+      },
+      {
+        "pagePath": "pages/introduction/introduction",
+        "text": "我们",
+        "iconPath": "image/icon_we_gray.png",
+        "selectedIconPath": "image/icon_we_orange.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/icon_mine_gray.png",
+        "selectedIconPath": "image/icon_mine_orange.png"
+      }
+    ]
+  }
+}

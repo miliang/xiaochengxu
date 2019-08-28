@@ -1,0 +1,9 @@
+/* pages/input/input.wxss */
+input{
+  border: 1px solid red
+}
+image{
+  position: absolute;
+  right: 30rpx;
+  top: 5rpx;
+}

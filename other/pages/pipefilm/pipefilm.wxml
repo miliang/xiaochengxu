@@ -1,0 +1,47 @@
+<!--pages/pipefilm/pipefilm.wxml-->
+<view class='container'>
+  <view class='filmdeail'>
+    <!-- <image src='../../image/filmDetail.png'></image> -->
+    <image src='../../image/filmDetail.png'></image>
+    <view class='filmdescrib'>
+        <!-- <view class='ftitle'>   -->
+        <text class='ftitle'>从你的全世界路过</text>
+        <text>Missing You</text>
+        <!-- </view>   -->
+        <view>  
+        <text class='mark'>9.1分</text> 
+        <text>(22.2万人评价)</text>
+        </view> 
+       <!-- <view class='fdescrib'>   -->
+        <text>言情，爱情,小清新</text>
+        <text>中国/120分钟</text>
+        <text>2016-02-15大陆上映</text>
+       <!-- </view>  -->
+    </view>
+  </view>
+
+  <view class='calender' >
+     <text wx:key='' wx:for='{{txtArray}}' id="{{item.id}}" class="{{item.changecolor?'selected':''}}" bindtap='changecolor' >{{item.txt}}</text>
+    <!-- <text data-num="2" bindtap='changeColor' class="{{_num==2?'cur':''}}">4月5日</text>
+    <text data-num="3" bindtap='changeColor' class="{{_num==3?'cur':''}}">4月6日</text>
+    <text data-num="4" bindtap='changeColor' class="{{_num==4?'cur':''}}">4月7日</text>  -->
+  </view>
+
+  <view class='cinemalist'>
+  
+      <view style="border-bottom:2px solid #e9e9e9;padding-bottom:15rpx;margin-top:15rpx" class='cinema-item'  wx:for='{{itemsrc}}'>
+        <navigator  url='/pages/filmdetail/filmdetail'>
+            <view class='content'>
+              <text class='cname'>{{item.cname}}</text>
+              <text>{{item.address}}</text>
+              <text class='ctype'>{{item.ctype}}</text>
+            </view>
+            <view class='price'>
+              {{item.price}}<text class='behind'>元/起</text>
+            </view>
+        </navigator>
+      </view>
+  
+  </view>
+    
+</view>

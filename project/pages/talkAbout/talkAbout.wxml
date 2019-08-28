@@ -1,0 +1,30 @@
+<!--pages/talkAbout/talkAbout.wxml-->
+<view class='container'>
+  <view class='section'>
+     <swiper autoplay='true' indicator-dots='true' indicator-active-color="#ffffff">
+      <block wx:for='{{imgUrls}}'>
+        <swiper-item>
+          <image src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='footer'>
+     <view wx:for='{{showSrc}}' class='footer-item'>
+      <image src="{{item.src}}"></image>
+      <view class='footer-item-text'> 
+        <text>{{item.context}}</text>
+      </view> 
+    </view>
+  </view>
+  </view>
+  <view class='section'>
+      <view class='header'>
+        <view class='circle'></view>
+        <text class='header-text'>功效</text>
+      </view>
+     <view class='header'>
+      <view class='circle'></view>
+      <text class='header-text'>专题</text>
+    </view>
+  </view>
+</view>

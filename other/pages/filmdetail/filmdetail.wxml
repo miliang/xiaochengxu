@@ -1,0 +1,42 @@
+<view class='container'>
+  <view class='header'>
+    <text class='Dtitle'>海上明珠国际影城(银泰店)</text>
+    <text>武侯区益州大道18888号银泰城5楼</text>
+  </view>
+
+  <view class='Dbanner'>
+   <image src='../../image/filmDetail.png'></image>
+  </view>
+
+  <view class='describ'>
+      <text class='Ftitle'>从你的全世界路过 <text id='mark'>9.1分</text></text>
+      <text>120分钟 | 爱情 | 邓超，白百何</text>
+  </view>
+
+  <view class='calender' >
+     <text wx:key='' wx:for='{{txtArray}}' id="{{item.id}}" class="{{item.changecolor?'selected':''}}" bindtap='changecolor' >{{item.txt}}</text>
+  </view>
+
+  <view class='content'>
+      <view class='content-item' wx:for='{{contentitem}}'>
+      <navigator hover-class="none"  url='/pages/seat/seat'>
+        <view class='time'>
+          <text>{{item.stime}}</text>
+          <text>{{item.etime}}散场</text>
+        </view>
+        <view class='tandh'>
+           <text>{{item.type}}</text>
+          <text>{{item.hall}}</text>
+        </view>
+        <view class='pandb'>
+          <text> <text class='sign'>￥</text>{{item.price}}</text>
+          <text class='buy'>{{item.buy}}</text>
+        </view>
+      </navigator>
+        
+      </view>
+  </view>
+
+
+
+</view>

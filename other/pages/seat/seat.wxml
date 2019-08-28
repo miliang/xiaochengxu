@@ -1,0 +1,44 @@
+<view class='container'>
+  <view class='title'>
+     <view class='content'> 
+      <text>从你的全世界路过</text>
+      <text class='time'>4月1日 09：00 英文3D</text>
+     </view>
+  </view>
+
+  <view class='header'>
+    <text>七号厅</text>
+    <text class='hall'>(银幕中央)</text>
+  </view>
+
+  <view class='rands'>
+    <view class='row'>
+      <text wx:for="{{rowtext}}">{{item}}</text>
+    </view>
+    <view class='seat'>
+     <checkbox wx:for="{{items}}" wx:key="{{index}}" id="0-{{index}}" bindtap="mycheck"/>
+     <checkbox wx:for="{{items}}" wx:key="{{index}}" id="1-{{index}}" bindtap='mycheck'/>
+     <checkbox wx:for="{{items}}" wx:key="{{index}}" id="2-{{index}}" bindtap='mycheck'/>
+     <checkbox wx:for="{{items}}" wx:key="{{index}}" id="3-{{index}}" bindtap='mycheck'/>
+     <checkbox wx:for="{{items}}" wx:key="{{index}}" id="4-{{index}}" bindtap='mycheck'/>
+     <checkbox wx:for="{{items}}" wx:key="{{index}}" id="5-{{index}}" bindtap='mycheck'/>
+     <checkbox wx:for="{{items}}" wx:key="{{index}}" id="6-{{index}}" bindtap='mycheck'/>
+      <checkbox wx:for="{{items}}" wx:key="{{index}}" id="7-{{index}}" bindtap='mycheck'/> 
+     <checkbox wx:for="{{items1}}" wx:key="{{index}}" id="8-{{index}}" bindtap='mycheck'/>
+     </view>
+  </view>
+
+
+
+<view class='pay'>
+    <view class='final'>
+      <text>您选的座位是：<text class='finaltext' wx:for='{{zuoarry}}'>{{item.hang}}{{item.lie}}</text>
+      </text>
+    </view>
+    <view>
+      <navigator hover-class='none' url='/pages/firmorder/firmorder'>
+        <button style='background-color:#26d62f;color:white;border:none'>确认选座              </button>
+      </navigator>
+    </view>
+  </view>
+</view>

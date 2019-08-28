@@ -1,0 +1,28 @@
+<!--pages/firmorder/firmorder.wxml-->
+<view class='container'>
+  <view class='Odetail'wx:for='{{Odetail}}'>
+    <text>{{item.fname}}</text>
+    <text class='time'>{{item.time}}</text>
+    <text>{{item.cinema}}</text>
+    <text>{{item.seat}}</text>
+  </view>
+
+  <view class='total'>
+    <text>总计</text>
+    <text id='price'><text id='sign'>￥</text>34.9</text>
+  </view>
+
+  <view class='pay'>
+    <view class='total lasttotal'>
+      <text>不支持退票、改签</text>
+      <text id='price'>还需支付:<text id='sign'>￥</text>34.9</text>
+    </view>
+    <view>
+       <navigator url='/pages/paysuccess/paysuccess'> 
+        <button style='background-color:#26d62f;color:white;border:none'>确认支付</button>
+       </navigator> 
+   
+    </view>
+  </view>
+</view>
+

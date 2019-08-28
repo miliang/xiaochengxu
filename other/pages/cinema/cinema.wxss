@@ -1,0 +1,59 @@
+/* pages/cinema/cinema.wxss */
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+input{
+  border: 1px solid silver;
+  border-radius: 10rpx;
+  align-self: center
+}
+
+.onhot{
+  border-left:10rpx solid #26d62f;
+  padding-left: 25rpx;
+  color: #828282;
+}
+
+.cinebanner>image{
+  width: 100%;
+  height: 110px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  color: #828282;
+  width: 60%;
+  line-height: 1.8
+}
+
+.cinema-item{
+  display: flex;
+  justify-content: space-around
+}
+
+.cname{
+  color: #333;
+  font-size: 35rpx;
+}
+
+.ctype{
+  outline: 1px solid 	#FFD700;
+  font-size: 20rpx;
+  color: #FFD700;
+}
+
+.price{
+  color: red;
+  margin-top: 15rpx;
+}
+
+.behind{
+  font-size: 25rpx;
+  color: #828282;
+}

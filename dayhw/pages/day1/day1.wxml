@@ -1,0 +1,41 @@
+<!--pages/day1/day1.wxml-->
+<!-- <text>pages/day1/day1.wxml</text> -->
+<view class='page'>
+<swiper class='page__hd' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" mode='aspectFit' class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- <button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button> -->
+<!-- <slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration -->
+<view class='page__bd'>
+  <view class='container1'>
+    <view class='box'></view>
+    <view class='introduct'>精品推荐</view>
+    <text class='all'>全部精品</text>
+       <view class='viewGroup'> 
+         <view class="after">
+         <image src='/image/img1.png' mode='aspectFill' style='width: 360rpx;height: 270rpx;'></image>
+         </view> 
+       <view class="after"><image src='/image/img2.png'  mode='aspectFill' style='width: 360rpx;height: 270rpx;'></image></view>
+         <view class="after"><image src='/image/img1.png' mode='aspectFill' style='width: 360rpx;height: 270rpx;'></image></view>
+        <view class="after"><image src='/image/img2.png' mode='aspectFill' style='width: 360rpx;height: 270rpx;'></image></view> 
+       </view>
+     </view> 
+  
+  </view>
+  <view class='container2'>
+   <view class='box'></view>
+   <view class='introduct' id='intro'>精品推荐</view>
+    <text class='all' id='all'>全部精品</text>
+    <view id='image'><image src='/image/img2.png' mode='aspectFill'></image></view>
+    <view id='radio'><image src='/image/avatar.png' mode='aspectFit' style='width:150rpx;height:150rpx;'></image></view>
+  <text id='title'>标题标题标题</text>
+  <text id='context'>这里是内容这里是内容这里是内容</text>
+  </view>
+</view>

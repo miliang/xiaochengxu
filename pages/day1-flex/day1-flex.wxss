@@ -1,0 +1,45 @@
+/* pages/day1-flex/day1-flex.wxss */
+.item{
+  width: 100rpx;
+  height:100rpx;
+  border:1px solid red;
+  background-color: gray;
+  /*浮动  */
+     /* float:left;    */
+     /*定义item放大  */
+     /* flex-grow: 3; */
+     /*定义item缩小  */
+     /* flex-shrink: 0.5 */
+}
+.container1{
+  width: 100%;
+  height: 1000rpx;
+  background-color:pink;
+  display: flex;
+   /*定义flex 就存在交叉轴和主轴  */
+   /*默认主轴的方向是X轴  */
+   /*定义主轴方向  */
+   flex-direction: row;
+   /*按照主轴方向是否换行 */
+   flex-wrap: wrap;
+   /*item 的排列  */
+   /*容器内的item按照主轴对齐方式  */
+   justify-content: center;
+   /*定义单行交叉轴对齐方式  */
+   align-items: center;
+   /*定义多行item布局方式  */
+   align-content: space-around;
+}
+#myItem1{
+  /* font-size: 26px; */
+  /* item占据的固定空间 */
+  /* flex-basis: 100px; */
+  /*允许单个项目与其他项目不一样的对齐方式，可覆盖align-items属性  */
+  align-self: flex-end;
+}
+/* .container1>myItem1{
+  width: 500rpx;
+  height: 200rpx;
+  margin: auto;
+  background-color: red;
+} */

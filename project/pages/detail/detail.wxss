@@ -1,0 +1,101 @@
+/* pages/detail/detail.wxss */
+/*产品题目  */
+#single{
+  margin-left: 30rpx;
+  font-size: 14px;
+  display: block;
+}
+/*价格  */
+#price{
+  margin-left: 30rpx;
+  color: red;
+  font-size: 14px;
+}
+/*优惠  */
+.count{
+  margin-left: 30rpx;
+  font-size: 14px;
+}
+/*库存与运费  */
+.num{
+  margin-left: 30rpx;
+  font-size: 12px;
+  display: block;
+  /* padding-right: 20rpx; */
+}
+/*图标  */
+.image{
+  width: 40rpx;
+  height: 40rpx;
+}
+/*section  */
+.section{
+   background-color: rgb（244 ,244 ,244）;
+}
+/*详情  */
+.product{
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15rpx;
+  margin: 20rpx 0 20rpx 0;
+}
+.product text{
+  font-size: 12px;
+}
+.product image{
+  margin-left: 30rpx;
+}
+#product-text{
+  margin-left: 30rpx;
+}
+.header text{
+  font-size:13px;
+  margin-left: 30rpx;
+}
+.section-item{
+  border-top:1px solid #ccc;
+  width: 90%;
+  margin: auto;
+}
+.section-item text{
+  font-size: 13px;
+  margin-left: 35rpx;
+}
+#image{
+  margin-top: 30rpx;
+  width: 80%;
+  height: 300rpx;
+   margin-left: 10%; 
+}
+/*button  */
+.context{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100rpx;
+  border: 1px solid #ccc;
+    margin-bottom: 0;
+}
+.context text{
+  font-size: 13px;
+}
+button{
+  font-size: 13px;
+  border-radius: 0;
+}
+.pay,.addCar{
+  width: 100%;
+}
+.pay button{
+  background-color: orangered;
+  color: white;
+  height: 42px;
+}
+.addCar button{
+  background-color: orange;
+  color: white;
+  height: 42px;
+}

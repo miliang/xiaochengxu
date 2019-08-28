@@ -1,0 +1,65 @@
+/* pages/mine/mine.wxss */
+.container{
+  background-color: rbga(96 ,96 ,96 ,0.1);
+}
+.header{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start; 
+} 
+/* .header image{
+  height: 300rpx;
+} */
+.section{
+  background-color: rgba(96 ,96 ,96 ,0.1);
+}
+.user_photo{ 
+  width: 15%;  
+  height: 100rpx;
+  padding: 30rpx; 
+  margin-top: 60rpx;   
+}
+.header text{
+  width: 40%;
+  color: white;
+  padding: 100rpx 50rpx;  
+  margin: 15rpx 0 0 10rpx;
+}
+/*图标  */
+.image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 90rpx 0 0 70rpx;
+}
+.item{
+  background-color: rbga(96 ,96 ,96 ,0.5);
+  width: 100%;
+  margin-bottom:30rpx;
+  /* margin: 30rpx; */
+}
+.item image{
+  width: 60rpx;
+  height: 60rpx;
+  padding: 20rpx;
+  /* vertical-align: middle; */
+}
+#myItem{
+  background-color: white;
+  margin-bottom: 15rpx;
+  height: 90rpx;
+}
+#myItem:last-child{
+  margin-top: 20rpx;
+}
+.content-item{
+  margin-top: -80rpx;
+  margin-left: 80rpx;
+   padding: 10rpx 15rpx 15epx 15rpx;  
+}
+.content-item-text{
+  font-size: 12px;
+  margin-left: 20rpx;
+   text-align: center 
+}
+
+

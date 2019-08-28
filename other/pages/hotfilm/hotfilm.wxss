@@ -1,0 +1,58 @@
+/**index.wxss**/
+swiper-item>image{
+  width: 100%;
+  height:150px;  
+}
+
+.onhot{
+  border-left:10rpx solid #26d62f;
+  padding-left: 25rpx;
+  color: #828282;
+}
+
+.film-item{
+    display: flex;  
+    margin-top: 15rpx; 
+    padding-bottom:15rpx; 
+    border-bottom:2px solid #e9e9e9; 
+    justify-content: space-around; 
+     /* width: 100%;  */
+}
+
+.film-item>image{
+   width: 25%;    
+   height: 120px;  
+}
+
+#content-title{
+  font-size: 35rpx;
+  color: #333;
+}
+
+.content{
+  font-size: 28rpx;
+  color: #828282;
+  display: flex; 
+  flex-wrap: wrap;  
+  width: 50%;   
+}
+
+.action{
+    width: 10%;   
+    display: flex; 
+    flex-wrap: wrap;      
+}
+
+.mark{
+  color: red;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.buy{
+  color:#26d62f;
+  font-size: 28rpx;
+  outline: 1px solid #26d62f;
+  padding: 6rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,89 @@
+/* pages/pipefilm/pipefilm.wxss */
+.filmdeail{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: #445566
+}
+
+.filmdeail>image{
+  width: 35%;
+  height: 180px;
+}
+
+.filmdescrib{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  color: #f0f0f0
+}
+
+.ftitle,.mark{
+  font-size: 40rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.mark{
+ color: #FFD700 ;
+
+}
+
+.calender{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-bottom: 1px solid #e9e9e9;
+  margin-top: 10px;
+  padding-bottom: 15rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.selected{
+  color:red;
+  border-bottom: 2px solid red;
+}
+
+.cinebanner>image{
+  width: 100%;
+  height: 110px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  color: #828282;
+  width: 60%;
+  line-height: 1.8
+}
+
+navigator{
+     display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around
+}
+
+.cname{
+  color: #333;
+  font-size: 35rpx;
+}
+
+.ctype{
+  outline: 1px solid 	#FFD700;
+  font-size: 20rpx;
+  color: #FFD700;
+}
+
+.price{
+  color: red;
+  margin-top: 15rpx;
+}
+
+.behind{
+  font-size: 25rpx;
+  color: #828282;
+}
+

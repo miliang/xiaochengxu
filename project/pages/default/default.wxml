@@ -1,0 +1,42 @@
+<!--pages/default/default.wxml-->
+<view class="container">
+  <view class='selection'>
+    <swiper autoplay='true'>
+      <block wx:for='{{imgUrls}}'>
+        <swiper-item>
+          <image src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='input'>
+        <input placeholder='开启你的美食之旅'/>
+          <image src='../../image/search.png' style='width:45rpx;height:45rpx;'></image>
+      </view>
+    <view class='footer' >
+     <view wx:for='{{showSrc}}' class='footer-item'>
+      <image src="{{item.src}}"></image>
+      <view class='footer-item-text'> 
+        <text>{{item.content}}</text>
+      </view> 
+    </view>
+  </view>
+  </view>
+  <view class='seletion'>
+    <view class='header'>
+      <view class='circle'></view>
+      <text class='header-text'>积分菜品</text>
+    </view>
+    <view class='content'>
+      <view wx:for='{{foodSrc}}' class='content-item'>
+        <image src='{{item.src}}'  bindtap='goDetail'></image>
+        <view class='font'>
+          <text class='content-item-text'>{{item.content}}</text>
+          <text class='content-item-price'>{{item.price}}</text>
+          <text class='content-item-dis'>{{item.distribute}}</text>
+          <image class='car' src='../../image/car.png' style='width:60rpx;height:60rpx;'></image> 
+        </view>
+      </view>
+    
+    </view>
+  </view>
+</view>
